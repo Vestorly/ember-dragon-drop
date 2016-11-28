@@ -37,7 +37,6 @@ export default Component.extend({
     let drake = window.dragula(options);
     this.set('drake', drake);
 
-    let model = this.get('model');
     let self = this;
 
     drake.on('drag', (elt) => {
@@ -45,6 +44,7 @@ export default Component.extend({
     });
 
     drake.on('drop', (elt) => {
+      let model = this.get('model');
       let eltData = this.get('_currentItem');
       let newIndex = this.eltIndex(elt);
       model.removeObject(eltData);
@@ -56,6 +56,7 @@ export default Component.extend({
       if (!this[eventName]) { return; }
 
       drake.on(eventName, function() {
+        let model = self.get('model');
         let eltData = self.get('_currentItem');
         self.sendAction(eventName, eltData, model, ...arguments);
       });
@@ -63,10 +64,9 @@ export default Component.extend({
 	}),
 
   eltToData(elt) {
-    let model = this.get('model');
     let index = this.eltIndex(elt);
     if (index > -1) {
-      return model.objectAt(index);
+      return this.get('model').objectAt(index);
     }
   },
 
