@@ -1,6 +1,6 @@
 {
   "name": "ember-dragon-drop",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A drag and drop library for Ember.js, based on dragula.js",
   "directories": {
     "doc": "doc",
