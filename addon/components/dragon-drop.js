@@ -127,17 +127,14 @@ export default Component.extend({
   /**
    Re-inserts the list items to force a rerender after drag and drop.
    Idea is to force ember and dragula to sync up DOM elements.
-   Fixes: https://www.pivotaltracker.com/n/projects/918134/stories/136659941
    @method _resetView
    @private
    */
 
   _resetView() {
-    run.scheduleOnce('render', this, function() {
-      this.set('listVisible', false);
-    });
+    this.set('listVisible', false);
 
-    run.scheduleOnce('afterRender', this, function() {
+    run.next(this, function() {
       this.set('listVisible', true);
     });
   },
