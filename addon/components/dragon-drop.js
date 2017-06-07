@@ -110,8 +110,10 @@ export default Component.extend({
 
       model.removeObject(eltData);
       model.insertAt(newIndex, eltData);
-      elt.remove();
-      this._resetView();
+      if (this.get('reset')) {
+        elt.remove();
+        this._resetView();        
+      }
     });
 
     dragulaEvents.forEach(eventName => {
