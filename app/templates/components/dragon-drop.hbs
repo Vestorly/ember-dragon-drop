@@ -1,5 +1,5 @@
 {{#if listVisible}}
-  {{#each model as |item|}}
-    {{yield item}}
+  {{#each model as |item index|}}
+    {{yield item index}}
   {{/each}}
 {{/if}}
