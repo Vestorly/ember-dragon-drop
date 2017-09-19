@@ -111,8 +111,8 @@ export default Component.extend({
       model.removeObject(eltData);
       model.insertAt(newIndex, eltData);
       if (this.get('reset')) {
-        elt.remove();
-        this._resetView();        
+        elt.parentNode.removeChild(elt);
+        this._resetView();
       }
     });
 
