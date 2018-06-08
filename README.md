@@ -1,6 +1,6 @@
 # Ember-dragon-drop
 
-[Short description of the addon.]
+An Ember component wrapper around [Dragula JS](https://github.com/bevacqua/dragula).
 
 Installation
 ------------------------------------------------------------------------------
