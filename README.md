@@ -2,28 +2,17 @@
 
 An Ember component wrapper around [Dragula JS](https://github.com/bevacqua/dragula).
 
-Installation
-------------------------------------------------------------------------------
+### Installation
+
+* `git clone https://github.com/Vestorly/ember-dragon-drop`
+* `cd ember-dragon-drop`
+* `npm install`
+
+or using `ember-cli`
 
 ```
 ember install my-addon
 ```
-
-
-Usage
-------------------------------------------------------------------------------
-
-[Longer description of how to use the addon in apps.]
-
-
-Contributing
-------------------------------------------------------------------------------
-
-### Installation
-
-* `git clone <repository-url>`
-* `cd my-addon`
-* `npm install`
 
 ### Linting
 
