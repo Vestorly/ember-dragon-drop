@@ -1,26 +1,38 @@
 # Ember-dragon-drop
 
-This README outlines the details of collaborating on this Ember addon.
+An Ember component wrapper around [Dragula JS](https://github.com/bevacqua/dragula).
 
-## Installation
+### Installation
 
-* `git clone` this repository
+* `git clone https://github.com/Vestorly/ember-dragon-drop`
+* `cd ember-dragon-drop`
 * `npm install`
-* `bower install`
 
-## Running
+or using `ember-cli`
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+```
+ember install my-addon
+```
 
-## Running Tests
+### Linting
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+* `npm run lint:js`
+* `npm run lint:js -- --fix`
 
-## Building
+### Running tests
 
-* `ember build`
+* `ember test` – Runs the test suite on the current Ember version
+* `ember test --server` – Runs the test suite in "watch mode"
+* `ember try:each` – Runs the test suite against multiple Ember versions
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+### Running the dummy application
+
+* `ember serve`
+* Visit the dummy application at [http://localhost:4200](http://localhost:4200).
+
+For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+
+License
+------------------------------------------------------------------------------
+
+This project is licensed under the [MIT License](LICENSE.md).
